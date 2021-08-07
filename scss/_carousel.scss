@@ -1,0 +1,127 @@
+.carousel-mobile {
+  display: block;
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.carousel-desktop {
+  display: none;
+
+  @media (min-width: 767px) {
+    display: block;
+  }
+}
+
+// General styles
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 3rem auto;
+
+  .carousel {
+    transform-style: preserve-3d;
+    position: relative;
+
+    &-card-mobile,
+    &-card-desktop {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      width: 100%;
+
+      z-index: 100;
+      transition: transform 500ms, opacity 500ms, z-index 500ms;
+      text-align: left;
+
+      .btn {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      &.initial,
+      &.active {
+        opacity: 1;
+        position: relative;
+        z-index: 900;
+      }
+
+      &.prev,
+      &.next {
+        z-index: 800;
+      }
+
+      &.prev {
+        transform: translateX(-100%); /* Move 'prev' item to left */
+      }
+
+      &.next {
+        transform: translateX(100%); /* Move 'next' item to left */
+      }
+    }
+
+    .carousel_button--prev,
+    .carousel_button--next {
+      position: absolute;
+      top: 30%;
+      width: 3rem;
+      height: 3rem;
+      background: var(--button-color);
+      color: var(--text-white);
+      transform: translateY(-50%);
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1001; /* Sit on top of everything */
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .carousel_button--prev {
+      left: -10px;
+    }
+    .carousel_button--next {
+      right: -10px;
+    }
+  }
+}
+
+// Mobile
+.carousel-mobile {
+  .carousel-wrapper {
+    .carousel {
+      &-card-mobile {
+        .carousel-content {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+.carousel-desktop {
+  .carousel-wrapper {
+    .carousel {
+      &-card-desktop {
+        figure {
+          position: relative;
+
+          .carousel-content {
+            position: absolute;
+            top: 15%;
+            left: 55px;
+
+            width: 50%;
+            color: var(--text-white);
+          }
+        }
+      }
+    }
+  }
+}

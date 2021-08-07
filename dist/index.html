@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Project Starter</title>
+  </head>
+  <body>
+    <!-- Header: this is on every page -->
+    <header class="header" id="header">
+      <ul class="menu-container">
+        <!-- Hamburger Menu *FOR MOBILE*-->
+        <div class="menu__mobile menu-wrap" id="menu-mobile">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <div class="cta">
+                    <!-- CTA should take user to booking platform -->
+                    <a href="#" class="btn">Book Now</a>
+                  </div>
+                  <li>
+                    <a href="index.html"> <p>Home</p></a>
+                  </li>
+                  <li>
+                    <a href="about.html"> <p>Boarding</p></a>
+                  </li>
+                  <li>
+                    <a href="contact.html"> <p>Rates</p></a>
+                  </li>
+                  <li>
+                    <a href="mailto:james@rabbitearsdesign.com">
+                      <p>Contact</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Logo -->
+          <figure class="logo">
+            <img src="../dist/rabbit_ears_graphic.png" alt="logo" />
+          </figure>
+        </div>
+
+        <!-- *DESKTOP MENU* -->
+        <nav class="menu__desktop" id="menu-desktop">
+          <!-- Logo -->
+          <figure class="logo">
+            <img src="../dist/rabbit_ears_graphic.png" alt="logo" />
+          </figure>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="index.html"> <p>Home</p></a>
+              </li>
+              <li>
+                <a href="about.html"> <p>Boarding</p></a>
+              </li>
+              <li>
+                <a href="contact.html"> <p>Rates</p></a>
+              </li>
+              <li>
+                <a href="mailto:james@rabbitearsdesign.com"> <p>Contact</p></a>
+              </li>
+            </ul>
+            <ul>
+              <a href="#" class="btn">Book Now</a>
+            </ul>
+          </div>
+        </nav>
+      </ul>
+    </header>
+
+    <main class="hero">
+      <!-- Insert CTA card carousel -->
+      <!-- This one should have image and h1 and CTA -->
+
+      <!-- Carousel mobile -->
+      <div class="carousel-mobile">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="carousel-card-mobile initial">
+              <figure>
+                <img src="./img/dog/dog-1.jpg" alt="background-image" />
+              </figure>
+              <div class="carousel-content">
+                <h1>Where people and pets are family</h1>
+                <h4>The kindest dog boarding around</h4>
+                <a href="#" class="btn">Reserve Today!</a>
+              </div>
+            </div>
+
+            <div class="carousel-card-mobile">
+              <figure>
+                <img src="./img/dog/dog-2.jpg" alt="background-image" />
+              </figure>
+              <h1>Where people and pets are family</h1>
+              <h4>The kindest dog boarding around</h4>
+              <a href="#" class="btn">Reserve Today!</a>
+            </div>
+
+            <div class="carousel-card-mobile">
+              <figure>
+                <img src="./img/dog/dog-3.jpg" alt="background-image" />
+              </figure>
+              <h1>Where people and pets are family</h1>
+              <h4>The kindest dog boarding around</h4>
+              <a href="#" class="btn">Reserve Today!</a>
+            </div>
+
+            <div class="carousel-card-mobile">
+              <figure>
+                <img src="./img/dog/dog-4.jpg" alt="background-image" />
+              </figure>
+              <h1>Where people and pets are family</h1>
+              <h4>The kindest dog boarding around</h4>
+              <a href="#" class="btn">Reserve Today!</a>
+            </div>
+
+            <div class="carousel_button--next">
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </div>
+            <div class="carousel_button--prev">
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Desktop -->
+      <div class="carousel-desktop">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="carousel-card-desktop initial">
+              <figure>
+                <img src="./img/dog/dog-1.jpg" alt="background-image" />
+                <div class="carousel-content">
+                  <h1>Where people and pets are family</h1>
+                  <h4>The kindest dog boarding around</h4>
+                  <a href="#" class="btn">Reserve Today!</a>
+                </div>
+              </figure>
+            </div>
+
+            <div class="carousel-card-desktop">
+              <figure>
+                <img src="./img/dog/dog-2.jpg" alt="background-image" />
+                <div class="carousel-content">
+                  <h1>Where people and pets are family</h1>
+                  <h4>The kindest dog boarding around</h4>
+                  <a href="#" class="btn">Reserve Today!</a>
+                </div>
+              </figure>
+            </div>
+
+            <div class="carousel-card-desktop">
+              <figure>
+                <img src="./img/dog/dog-3.jpg" alt="background-image" />
+                <div class="carousel-content">
+                  <h1>Where people and pets are family</h1>
+                  <h4>The kindest dog boarding around</h4>
+                  <a href="#" class="btn">Reserve Today!</a>
+                </div>
+              </figure>
+            </div>
+
+            <div class="carousel-card-desktop">
+              <figure>
+                <img src="./img/dog/dog-4.jpg" alt="background-image" />
+                <div class="carousel-content">
+                  <h1>Where people and pets are family</h1>
+                  <h4>The kindest dog boarding around</h4>
+                  <a href="#" class="btn">Reserve Today!</a>
+                </div>
+              </figure>
+            </div>
+
+            <div class="carousel_button--next">
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </div>
+            <div class="carousel_button--prev">
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section bg-primary text-align">
+      <div class="website-container">
+        <div class="section-content">
+          <h2>Dog Daycare & Boarding</h2>
+          <h3 class="uppercase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+            aspernatur molestiae facere assumenda eaque voluptates maiores vel
+            enim. Cum aliquid molestias rerum nulla amet dolor quos corrupti et
+            iste voluptatem?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Insert CTA card carousel -->
+      <!-- This one should have graphic and basic link -->
+    </section>
+
+    <section class="section bg-light text-align">
+      <div class="website-container">
+        <div class="section-content">
+          <h2>Are you new here?</h2>
+          <h4>Click the link below to schedule</h4>
+          <a href="#" class="btn">Scheduling Portal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="website-container">
+        <h1 class="text-align">Find Us Here!</h1>
+        <aside class="flex">
+          <ul class="flex-1">
+            <h3>Erie location</h3>
+            <li>
+              <small>1111 Test Address</small>
+            </li>
+            <li>
+              <small>Erie, CO 80516</small>
+            </li>
+            <li>
+              <small>Phone/Text</small>
+              <a href="tel:+1234567890">(123) 456-7890</a>
+            </li>
+          </ul>
+          <map name="" class="flex-2">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="900"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=erie&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://putlocker-is.org"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                    margin: 0 auto;
+                  }
+                </style>
+                <a href="https://www.embedgooglemap.net">get google map link</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                  }
+                </style>
+              </div>
+            </div>
+          </map>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Brief Reviews -->
+    <section class="section bg-secondary text-align">
+      <div class="website-container">
+        <div class="section-content">
+          <h4>"Great boarding" - John Doe</h4>
+          <h4>"Great boarding" - John Doe</h4>
+          <h4>"Great boarding" - John Doe</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light text-align">
+      <div class="website-container">
+        <div class="section-content">
+          <h2>Client Reviews & Testimonials</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            excepturi, illo tenetur officia pariatur sequi laudantium ab dolores
+            saepe officiis cum cupiditate. Alias magnam accusamus illo, iste
+            beatae facilis aperiam dolore porro autem vel architecto et pariatur
+            numquam. Possimus deleniti amet facilis dolorum nemo nesciunt quia
+            ex vel asperiores molestiae?
+          </p>
+          <!-- Insert testimonial cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Schedule now -->
+    <section class="section bg-primary text-align">
+      <div class="website-container">
+        <div class="section-content">
+          <h1>Schedule Now!</h1>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Insert footer -->
+    </footer>
+
+    <script src="carousel.js"></script>
+  </body>
+</html>

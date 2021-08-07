@@ -1,0 +1,25 @@
+* {
+  --font-stack: "Poppins", sans-serif;
+  --hamburger-menu-background-color: rgba(0, 0, 0, 0.3);
+
+  // Buttons
+  --button-font-mobile: 1.2rem;
+  --button-font-desktop: 1.5rem;
+  --button-color: rgba(92, 80, 255, 0.986);
+  --button-color-hover: rgba(74, 63, 221, 0.986);
+
+  // Colors
+  --primary-color: coral;
+  --secondary--color: rgba(129, 121, 236, 0.986);
+
+  // Backgrounds
+  --bg-light: #f4f4f4;
+  --bg-dark: #333;
+  --bg-primary: var(--primary-color);
+  --bg-secondary: var(--secondary--color);
+
+  // Text
+  --text-white: #fff;
+  --text-black: #111;
+  --text-grey: #eee;
+}
