@@ -119,6 +119,15 @@
 
             width: 50%;
             color: var(--text-white);
+
+            h1,
+            h4 {
+              text-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.6);
+            }
+
+            .btn {
+              padding: 2rem;
+            }
           }
         }
       }

@@ -488,9 +488,8 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -504,10 +503,25 @@ li a {
 }
 
 .header .menu-container .menu__desktop .menu ul li a p {
-  margin: 0.75rem 0;
+  font-weight: 900;
 }
 
-.header .menu-container .menu__desktop .logo {
+.header .menu-container .menu__desktop .menu ul li a p::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: var(--text-black);
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+.header .menu-container .menu__desktop .menu ul li a p:hover:before {
+  width: 70px;
+}
+
+.header .menu-container .menu__desktop .menu ul .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,5 +685,14 @@ li a {
   left: 55px;
   width: 50%;
   color: var(--text-white);
+}
+
+.carousel-desktop .carousel-wrapper .carousel-card-desktop figure .carousel-content h1,
+.carousel-desktop .carousel-wrapper .carousel-card-desktop figure .carousel-content h4 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-desktop .carousel-wrapper .carousel-card-desktop figure .carousel-content .btn {
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

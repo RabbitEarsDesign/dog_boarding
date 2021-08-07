@@ -32,7 +32,7 @@
       align-items: center;
       .menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         ul {
@@ -40,23 +40,39 @@
           li {
             a {
               p {
-                margin: 0.75rem 0;
+                font-weight: 900;
+
+                &::before {
+                  position: absolute;
+                  bottom: 0;
+
+                  content: "";
+
+                  width: 0px;
+                  height: 2px;
+                  background: var(--text-black);
+
+                  transition: width 0.2s linear;
+                }
+
+                &:hover:before {
+                  width: 70px;
+                }
               }
             }
           }
+
+          .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100px;
+            height: 100px;
+          }
         }
       }
-
-      .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100px;
-        height: 100px;
-      }
     }
-
     // Mobile
     .menu__mobile {
       .logo {
