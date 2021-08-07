@@ -21,32 +21,22 @@
     <header class="header" id="header">
       <ul class="menu-container">
         <!-- Hamburger Menu *FOR MOBILE*-->
-        <div class="menu__mobile menu-wrap" id="menu-mobile">
-          <input type="checkbox" class="toggler" />
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
-            <div>
+
+        <div class="menu__mobile">
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
               <div>
-                <ul>
-                  <div class="cta">
-                    <!-- CTA should take user to booking platform -->
-                    <a href="#" class="btn">Book Now</a>
-                  </div>
-                  <li>
-                    <a href="index.html"> <p>Home</p></a>
-                  </li>
-                  <li>
-                    <a href="about.html"> <p>Boarding</p></a>
-                  </li>
-                  <li>
-                    <a href="contact.html"> <p>Rates</p></a>
-                  </li>
-                  <li>
-                    <a href="mailto:james@rabbitearsdesign.com">
-                      <p>Contact</p></a
-                    >
-                  </li>
-                </ul>
+                <div>
+                  <a href="#" class="btn">Book Now</a>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -250,40 +240,18 @@
               <a href="tel:+1234567890">(123) 456-7890</a>
             </li>
           </ul>
-          <map name="" class="flex-2">
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe
-                  width="900"
-                  height="500"
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=erie&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                ></iframe
-                ><a href="https://putlocker-is.org"></a><br /><style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 500px;
-                    width: 600px;
-                    margin: 0 auto;
-                  }
-                </style>
-                <a href="https://www.embedgooglemap.net">get google map link</a
-                ><style>
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 600px;
-                  }
-                </style>
-              </div>
+          <div class="flex-2">
+            <div class="map-responsive">
+              <iframe
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=erie%20c&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
             </div>
-          </map>
+          </div>
         </aside>
       </div>
     </section>
