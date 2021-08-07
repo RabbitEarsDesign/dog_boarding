@@ -1,5 +1,5 @@
 .menu-wrap {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -24,7 +24,8 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: var(--primary-color);
+  background: var(--bg-light);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +37,7 @@
   flex: none;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: var(--text-black);
   display: flex;
   align-items: center;
   justify-content: center;
