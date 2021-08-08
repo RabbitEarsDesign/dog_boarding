@@ -50,6 +50,12 @@
       transform: rotate(180deg);
     }
   }
+
+  // Checkbox indicators
+  &__pagination__page {
+    position: absolute;
+    padding: 10px;
+  }
 }
 
 // Change image specs

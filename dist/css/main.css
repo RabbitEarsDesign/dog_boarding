@@ -630,6 +630,11 @@ li a {
           transform: rotate(180deg);
 }
 
+.splide__pagination__page {
+  position: absolute;
+  padding: 10px;
+}
+
 .splide img {
   background-position: cover;
   width: 100%;
