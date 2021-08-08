@@ -158,12 +158,6 @@ li a {
   margin-right: 1rem;
 }
 
-@media (min-width: 767px) {
-  .margin-right {
-    margin-right: 3rem;
-  }
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,10 +614,6 @@ li a {
   }
 }
 
-.section-split-content figure {
-  margin-left: 2rem;
-}
-
 @media (min-width: 767px) {
   .section-split-content figure {
     margin-left: 4rem;
@@ -632,7 +622,6 @@ li a {
 
 .section .flex-reverse figure {
   margin-left: 0;
-  margin-right: 2rem;
 }
 
 @media (min-width: 767px) {
@@ -832,5 +821,10 @@ li a {
 .card-1 p {
   line-height: 2rem;
   font-weight: 700;
+}
+
+.banner figure {
+  height: 300px;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
