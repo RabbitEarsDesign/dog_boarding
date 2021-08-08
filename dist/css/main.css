@@ -659,7 +659,7 @@ li a {
   background: var(--button-color);
   border-radius: 5px;
   padding: 10px 5px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .splide__arrow svg path {
