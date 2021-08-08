@@ -632,8 +632,10 @@ li a {
 
 .splide__pagination {
   position: absolute;
-  bottom: 5px;
-  left: 0%;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .splide__pagination__page {
@@ -663,6 +665,7 @@ li a {
   text-align: center;
   width: 60%;
   margin: 0 auto;
+  padding: 2rem 0 4rem 0;
 }
 
 @media (min-width: 767px) {

@@ -54,8 +54,9 @@
   // Checkbox indicators
   &__pagination {
     position: absolute;
-    bottom: 5px;
-    left: 0%;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
 
     &__page {
       padding: 10px;
@@ -89,6 +90,7 @@
 
   width: 60%;
   margin: 0 auto;
+  padding: 2rem 0 4rem 0;
 
   // Styles for desktop
   @media (min-width: 767px) {
