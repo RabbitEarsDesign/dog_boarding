@@ -630,12 +630,16 @@ li a {
           transform: rotate(180deg);
 }
 
-.splide__pagination__page {
+.splide__pagination {
   position: absolute;
   bottom: 15px;
   left: 50%;
+}
+
+.splide__pagination__page {
   padding: 10px;
   border-radius: 50%;
+  border: 2px solid #000;
 }
 
 .splide__pagination__page.is-active {
