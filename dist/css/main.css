@@ -5,8 +5,8 @@
   --button-font-desktop: 1.5rem;
   --button-color: rgba(92, 80, 255, 0.986);
   --button-color-hover: rgba(74, 63, 221, 0.986);
-  --primary-color: coral;
-  --secondary--color: rgba(129, 121, 236, 0.986);
+  --primary-color: #ecbb79;
+  --secondary--color: #8179ec;
   --bg-light: #f4f4f4;
   --bg-dark: rgba(191, 188, 229, 0.986);
   --bg-primary: var(--primary-color);
@@ -131,9 +131,15 @@ h3 {
 
 li a {
   display: inline-block;
-  padding: 1rem 1.5rem;
+  padding: 10px;
   font-weight: 500;
   color: var(--text-black);
+}
+
+@media (min-width: 1023px) {
+  li a {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .text-align {
@@ -508,12 +514,10 @@ li a {
 }
 
 .header .menu-container .menu__desktop {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .header .menu-container .menu__desktop .menu {
@@ -826,5 +830,11 @@ li a {
 .banner figure {
   height: 300px;
   width: 100%;
+}
+
+figure.logo img {
+  width: 100px;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
 }
 /*# sourceMappingURL=main.css.map */

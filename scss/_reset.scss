@@ -128,10 +128,14 @@ h4 {
 li {
   a {
     display: inline-block;
-    padding: 1rem 1.5rem;
+    padding: 10px;
 
     font-weight: 500;
 
     color: var(--text-black);
+
+    @media (min-width: 1023px) {
+      padding: 1rem 1.5rem;
+    }
   }
 }
