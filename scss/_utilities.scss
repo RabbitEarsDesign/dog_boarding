@@ -6,27 +6,19 @@
   text-transform: uppercase;
 }
 
-// Flex
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+// Margins
+.margin-left {
+  margin-left: 1rem;
 
   @media (min-width: 767px) {
-    flex-direction: row;
+    margin-left: 3rem;
   }
+}
 
-  &-1 {
-    flex: 1;
-  }
+.margin-right {
+  margin-right: 1rem;
 
-  &-2 {
-    flex: 2;
-  }
-
-  &-grow {
-    display: flex;
-    flex: 1;
+  @media (min-width: 767px) {
+    margin-right: 3rem;
   }
 }

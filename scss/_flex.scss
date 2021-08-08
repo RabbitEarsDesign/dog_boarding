@@ -1,0 +1,31 @@
+// Flex
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+
+  // Flex grow of 1
+  &-1 {
+    flex: 1;
+  }
+
+  // Flex grow of 2
+  &-2 {
+    flex: 2;
+  }
+
+  // Used for cards
+  &-grow {
+    display: flex;
+    flex: 1;
+  }
+
+  &-reverse {
+    flex-direction: row-reverse;
+  }
+}
