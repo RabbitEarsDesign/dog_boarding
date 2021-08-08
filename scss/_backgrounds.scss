@@ -1,0 +1,44 @@
+// Backgrounds
+.bg-primary {
+  position: relative;
+  background: var(--bg-primary);
+  color: var(--text-white);
+
+  &:before {
+    content: "";
+    background: url(../img/bg-1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+  }
+}
+
+.bg-secondary {
+  position: relative;
+  background: var(--bg-secondary);
+  color: var(--text-white);
+
+  &:before {
+    content: "";
+    background: url(../img/bg-3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+}
+
+.bg-light {
+  background: var(--bg-light);
+  color: var(--text-black);
+}
+
+.bg-dark {
+  background: var(--bg-dark);
+  color: var(--text-black);
+}

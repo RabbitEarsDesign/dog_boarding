@@ -1,4 +1,5 @@
 /* Custimize based on screen size */
+// Change content position based on screen size
 @media (min-width: 767px) {
   .splide__slide {
     position: relative;
@@ -7,14 +8,8 @@
   .carousel-content {
     position: absolute;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    text-align: left;
-
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
 
     width: 75%;
@@ -22,25 +17,42 @@
   }
 }
 
-// Arrows
-.splide__arrow {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
+.splide {
+  // Arrows
+  &__arrow {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
 
-  z-index: 2;
+    z-index: 2;
 
-  background: var(--button-color);
+    background: var(--button-color);
+
+    border-radius: 5px;
+    padding: 10px 5px;
+    opacity: 0.8;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__arrow--next {
+    right: 0px;
+  }
+
+  &__arrow--prev {
+    left: 0px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
-.splide__arrow--next {
-  right: 0px;
-}
-
-.splide__arrow--prev {
-  left: 0px;
-}
-
+// Change image specs
 .splide {
   img {
     background-position: cover;
@@ -53,16 +65,29 @@
   }
 }
 
-.splide__slide {
-  position: relative;
-}
-
+// Styles for content
 .carousel-content {
-  position: absolute;
+  text-align: center;
 
+  width: 60%;
   margin: 0 auto;
-  width: 55%;
 
-  color: var(--text-white);
-  text-shadow: 3px 3px 0px rgba($color: #000000, $alpha: 0.6);
+  // Styles for desktop
+  @media (min-width: 767px) {
+    text-align: left;
+    margin: 0 auto;
+    width: 45%;
+
+    color: var(--text-white);
+    text-shadow: 3px 3px 0px rgba($color: #000000, $alpha: 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    .btn {
+      margin: 0;
+    }
+  }
 }
