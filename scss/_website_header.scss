@@ -39,25 +39,24 @@
           display: flex;
           li {
             a {
-              p {
-                font-weight: 900;
+              position: relative;
+              font-weight: 900;
 
-                &::before {
-                  position: absolute;
-                  bottom: 0;
+              &::before {
+                position: absolute;
+                bottom: 0;
 
-                  content: "";
+                content: "";
 
-                  width: 0px;
-                  height: 2px;
-                  background: var(--text-black);
+                width: 0px;
+                height: 2px;
+                background: var(--text-black);
 
-                  transition: width 0.2s linear;
-                }
+                transition: width 0.2s linear;
+              }
 
-                &:hover:before {
-                  width: 70px;
-                }
+              &:hover:before {
+                width: 75px;
               }
             }
           }

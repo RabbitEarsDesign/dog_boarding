@@ -14,6 +14,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="./css/splide-core.min.css" />
+    <script src="./js/splide.min.js"></script>
+    <script src="./js/carousel.js"></script>
+
     <title>Project Starter</title>
   </head>
   <body>
@@ -56,16 +62,16 @@
           <div class="menu">
             <ul>
               <li>
-                <a href="index.html"> <p>Home</p></a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="about.html"> <p>Boarding</p></a>
+                <a href="boarding.html">Boarding</a>
               </li>
               <li>
-                <a href="contact.html"> <p>Rates</p></a>
+                <a href="rates.html">Rates</a>
               </li>
               <li>
-                <a href="mailto:james@rabbitearsdesign.com"> <p>Contact</p></a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
             <ul>
@@ -79,114 +85,53 @@
     <main class="hero">
       <!-- Insert CTA card carousel -->
       <!-- This one should have image and h1 and CTA -->
-
-      <!-- Carousel mobile -->
-      <div class="carousel-mobile">
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="carousel-card-mobile initial">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
               <figure>
-                <img src="./img/dog/dog-1.jpg" alt="background-image" />
+                <img src="./img/dog/dog-1.jpg" alt="dog" />
               </figure>
               <div class="carousel-content">
-                <h1>Where people and pets are family</h1>
-                <h4>The kindest dog boarding around</h4>
-                <a href="#" class="btn">Reserve Today!</a>
+                <h1>Where dogs and humans are family</h1>
+                <h4>Highest rated dog boarding</h4>
+                <a href="#" class="btn">Book Now</a>
               </div>
-            </div>
-
-            <div class="carousel-card-mobile">
+            </li>
+            <li class="splide__slide">
               <figure>
-                <img src="./img/dog/dog-2.jpg" alt="background-image" />
+                <img src="./img/dog/dog-2.jpg" alt="dog" />
               </figure>
-              <h1>Where people and pets are family</h1>
-              <h4>The kindest dog boarding around</h4>
-              <a href="#" class="btn">Reserve Today!</a>
-            </div>
-
-            <div class="carousel-card-mobile">
+              <div class="carousel-content">
+                <h1>Your dog wont want to leave</h1>
+                <h4>Highest rated dog boarding</h4>
+                <a href="#" class="btn">Book Now</a>
+              </div>
+            </li>
+            <li class="splide__slide">
               <figure>
-                <img src="./img/dog/dog-3.jpg" alt="background-image" />
+                <img src="./img/dog/dog-3.jpg" alt="dog" />
               </figure>
-              <h1>Where people and pets are family</h1>
-              <h4>The kindest dog boarding around</h4>
-              <a href="#" class="btn">Reserve Today!</a>
-            </div>
-
-            <div class="carousel-card-mobile">
+              <div class="carousel-content">
+                <h1>Where dogs and humans are family</h1>
+                <h4>Highest rated dog boarding</h4>
+                <a href="#" class="btn">Book Now</a>
+              </div>
+            </li>
+            <li class="splide__slide">
               <figure>
-                <img src="./img/dog/dog-4.jpg" alt="background-image" />
+                <img src="./img/dog/dog-4.jpg" alt="dog" />
               </figure>
-              <h1>Where people and pets are family</h1>
-              <h4>The kindest dog boarding around</h4>
-              <a href="#" class="btn">Reserve Today!</a>
-            </div>
-
-            <div class="carousel_button--next">
-              <i class="fas fa-chevron-right fa-2x"></i>
-            </div>
-            <div class="carousel_button--prev">
-              <i class="fas fa-chevron-left fa-2x"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel Desktop -->
-      <div class="carousel-desktop">
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="carousel-card-desktop initial">
-              <figure>
-                <img src="./img/dog/dog-1.jpg" alt="background-image" />
-                <div class="carousel-content">
-                  <h1>Where people and pets are family</h1>
-                  <h4>The kindest dog boarding around</h4>
-                  <a href="#" class="btn">Reserve Today!</a>
+              <div class="carousel-content flex">
+                <div class="flex-1">
+                  <h1>Big or small welcome all</h1>
+                  <h4>Highest rated dog boarding</h4>
+                  <a href="#" class="btn">Book Now</a>
                 </div>
-              </figure>
-            </div>
-
-            <div class="carousel-card-desktop">
-              <figure>
-                <img src="./img/dog/dog-2.jpg" alt="background-image" />
-                <div class="carousel-content">
-                  <h1>Where people and pets are family</h1>
-                  <h4>The kindest dog boarding around</h4>
-                  <a href="#" class="btn">Reserve Today!</a>
-                </div>
-              </figure>
-            </div>
-
-            <div class="carousel-card-desktop">
-              <figure>
-                <img src="./img/dog/dog-3.jpg" alt="background-image" />
-                <div class="carousel-content">
-                  <h1>Where people and pets are family</h1>
-                  <h4>The kindest dog boarding around</h4>
-                  <a href="#" class="btn">Reserve Today!</a>
-                </div>
-              </figure>
-            </div>
-
-            <div class="carousel-card-desktop">
-              <figure>
-                <img src="./img/dog/dog-4.jpg" alt="background-image" />
-                <div class="carousel-content">
-                  <h1>Where people and pets are family</h1>
-                  <h4>The kindest dog boarding around</h4>
-                  <a href="#" class="btn">Reserve Today!</a>
-                </div>
-              </figure>
-            </div>
-
-            <div class="carousel_button--next">
-              <i class="fas fa-chevron-right fa-2x"></i>
-            </div>
-            <div class="carousel_button--prev">
-              <i class="fas fa-chevron-left fa-2x"></i>
-            </div>
-          </div>
+                <div class="flex-2"></div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
