@@ -54,16 +54,17 @@
   // Checkbox indicators
   &__pagination {
     position: absolute;
-    bottom: 15px;
-    left: 50%;
+    bottom: 5px;
+    left: 0%;
 
     &__page {
       padding: 10px;
       border-radius: 50%;
-      border: 2px solid #000;
+      border: 2px solid var(--button-color);
+      background: var(--bg-light);
 
       &.is-active {
-        background: var(--primary-color);
+        background: var(--button-color);
       }
     }
   }
