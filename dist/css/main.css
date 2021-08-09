@@ -14,6 +14,7 @@
   --text-white: #fff;
   --text-black: #222;
   --text-grey: #eee;
+  --text-primary: var(--primary-color);
 }
 
 *,
@@ -258,7 +259,7 @@ li a {
 
 .bg-dark {
   background: var(--bg-dark);
-  color: var(--text-black);
+  color: var(--text-white);
 }
 
 .btn {
@@ -555,7 +556,7 @@ li a {
 }
 
 .header .menu-container .menu__desktop .menu ul li a:hover:before {
-  width: 75px;
+  width: 55px;
 }
 
 .header .menu-container .menu__desktop .menu ul .logo {
@@ -827,9 +828,23 @@ li a {
   font-weight: 700;
 }
 
+.banner {
+  position: relative;
+}
+
 .banner figure {
-  height: 300px;
+  height: 350px;
   width: 100%;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: var(--text-white);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
 figure.logo img {
