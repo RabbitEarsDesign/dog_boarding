@@ -1,12 +1,11 @@
 // ONSCROLL ANIMATIONS
-const scrollElements = document.querySelectorAll(".section-content");
+const scrollElements = document.querySelectorAll(".js-scroll");
 
-document.addEventListener("onload", () => {
-  scrollElements.forEach((el) => {
-    el.style.opacity = 0;
-    el.style.transform = "translateY(100%)";
-  });
-});
+// Hide the js-scroll elements on first load this allows users without JS to still see content
+// scrollElements.forEach((el) => {
+//   el.style.opacity = 0;
+//   el.style.transform = "translateY(100%)";
+// });
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -33,9 +32,10 @@ const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
 };
 
+// Change the second parameter of elementInView in order to change when the class is added
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 0.75)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
       hideScrollElement(el);
@@ -45,14 +45,6 @@ const handleScrollAnimation = () => {
 
 window.addEventListener("scroll", () => {
   throttle(handleScrollAnimation, 250);
-});
-
-const squares = document.querySelectorAll(".square");
-
-const squaresToArr = Array.apply(null, squares);
-
-squaresToArr.forEach((square) => {
-  square.addEventListener("click", squareClick);
 });
 
 // THROTTLE FOR ONSCROLL ANIMATIONS

@@ -32,17 +32,3 @@
     }
   }
 }
-
-// JS SCROLL
-.section {
-  &-content {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 0.2s ease;
-  }
-
-  &-content.scrolled {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
