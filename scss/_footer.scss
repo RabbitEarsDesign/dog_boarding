@@ -1,0 +1,25 @@
+.footer {
+  figure {
+    img {
+      @media (min-width: 767px) {
+        width: 30%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .menu {
+    ul {
+      li {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  .copyright {
+    margin: 1rem;
+    @media (min-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

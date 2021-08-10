@@ -35,7 +35,7 @@ const hideScrollElement = (element) => {
 // Change the second parameter of elementInView in order to change when the class is added
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-    if (elementInView(el, 0.75)) {
+    if (elementInView(el, 0.95)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
       hideScrollElement(el);

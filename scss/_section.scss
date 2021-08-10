@@ -8,6 +8,14 @@
   &-content {
     position: relative;
     z-index: 1;
+
+    ul {
+      margin-left: 2rem;
+      li {
+        list-style: disc;
+        padding: 1rem 0;
+      }
+    }
   }
 
   &-split-content {
